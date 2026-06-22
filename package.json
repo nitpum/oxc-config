@@ -1,0 +1,27 @@
+{
+  "name": "@nitpum/oxc-config",
+  "version": "0.1.0",
+  "description": "Shared oxlint config, reusable across repos.",
+  "license": "MIT",
+  "author": "nitpum",
+  "packageManager": "pnpm@11.8.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nitpum/oxc-config.git"
+  },
+  "main": "index.json",
+  "files": [
+    "index.json",
+    "custom.json"
+  ],
+  "keywords": [
+    "oxc",
+    "oxlint",
+    "lint",
+    "config",
+    "shareable-config"
+  ],
+  "scripts": {
+    "lint": "oxlint ."
+  }
+}
