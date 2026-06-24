@@ -1,12 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/refs/heads/main/npm/oxlint/configuration/oxlintrc.json",
   "plugins": ["import"],
+  "jsPlugins": ["./plugins/no-subdirectory-relative-imports.js"],
   "categories": {
     "correctness": "error",
     "suspicious": "warn",
     "perf": "warn"
   },
   "rules": {
-    "import/no-relative-parent-imports": "error"
+    "import/no-relative-parent-imports": "error",
+    "nitpum/no-subdirectory-relative-imports": "error"
   }
 }
