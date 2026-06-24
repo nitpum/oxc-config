@@ -236,3 +236,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,dotenv,node,visualstudiocode
+
+# Build output
+dist/
+coverage/
+
+# pnpm
+.pnpm-store/

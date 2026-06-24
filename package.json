@@ -10,10 +10,12 @@
     "url": "git+ssh://git@github.com/nitpum/oxc-config.git"
   },
   "main": "index.json",
+  "types": "dist/index.d.ts",
   "files": [
     "index.json",
     "custom.json",
-    "plugins"
+    "dist",
+    "src"
   ],
   "keywords": [
     "oxc",
@@ -23,6 +25,15 @@
     "shareable-config"
   ],
   "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "vitest run",
     "lint": "oxlint ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/utils": "^8.62.0",
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
   }
 }
