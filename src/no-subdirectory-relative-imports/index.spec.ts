@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { RuleTester } from "eslint";
-import { rule, isSubdirectoryRelative } from "../src/no-subdirectory-relative-imports";
+import { rule, isSubdirectoryRelative } from ".";
 
 describe("isSubdirectoryRelative", () => {
   it("allows same-level siblings", () => {

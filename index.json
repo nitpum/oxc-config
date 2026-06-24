@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/refs/heads/main/npm/oxlint/configuration/oxlintrc.json",
   "plugins": ["import"],
-  "jsPlugins": ["./dist/no-subdirectory-relative-imports.js"],
+  "jsPlugins": ["./dist/no-subdirectory-relative-imports/index.js"],
   "categories": {
     "correctness": "error",
     "suspicious": "warn",
