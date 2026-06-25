@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { isGlobMatch, matchesAny } from "./glob";
+import { isGlobMatch, matchesAny } from ".";
 
 describe("isGlobMatch - single segment", () => {
   it("matches exact names", () => {

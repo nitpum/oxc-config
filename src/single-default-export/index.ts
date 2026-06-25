@@ -1,7 +1,5 @@
 import type { TSESLint, TSESTree } from "@typescript-eslint/utils";
-import { matchesAny } from "./glob";
-
-export { isGlobMatch, matchesAny } from "./glob";
+import { matchesAny } from "../utils/isGlobMatch";
 
 export const MESSAGE_IDS = {
   named: "noNamedExport",

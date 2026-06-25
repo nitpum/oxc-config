@@ -3,7 +3,7 @@ import singleDefaultExport from "./single-default-export";
 
 export { rule, isSubdirectoryRelative, MESSAGE_ID } from "./no-subdirectory-relative-imports";
 export { rule as singleDefaultExportRule } from "./single-default-export";
-export { isGlobMatch, matchesAny } from "./single-default-export/glob";
+export { isGlobMatch, matchesAny } from "./utils/isGlobMatch";
 
 const plugin = {
   meta: { name: "nitpum" },
