@@ -31,6 +31,7 @@
     "lint": "oxlint ."
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^8.62.0",
     "@typescript-eslint/utils": "^8.62.0",
     "eslint": "^10.5.0",
     "typescript": "^6.0.3",
