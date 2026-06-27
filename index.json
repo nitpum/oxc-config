@@ -15,7 +15,8 @@
       {
         "include": [
           "**/hooks/*/index.*",
-          "**/components/*/index.*"
+          "**/components/*/index.*",
+          "**/utils/*/index.*"
         ]
       }
     ]
