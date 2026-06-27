@@ -14,9 +14,9 @@
       "error",
       {
         "include": [
-          "**/hooks/*/index.*",
-          "**/components/*/index.*",
-          "**/utils/*/index.*"
+          "**/hooks/*/index.ts",
+          "**/components/*/index.{ts,tsx}",
+          "**/utils/*/index.ts"
         ]
       }
     ]
