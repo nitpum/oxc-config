@@ -63,6 +63,12 @@ describe("isGlobMatch - globstar", () => {
     expect(isGlobMatch("src/*.ts", "src/a.ts")).toBe(true);
     expect(isGlobMatch("src/*.ts", "src/sub/a.ts")).toBe(false);
   });
+
+  it("treats a single * segment as exactly one path segment (not a globstar)", () => {
+    expect(isGlobMatch("src/*/index.ts", "src/a/index.ts")).toBe(true);
+    expect(isGlobMatch("src/*/index.ts", "src/a/b/index.ts")).toBe(false);
+    expect(isGlobMatch("src/*/index.ts", "src/index.ts")).toBe(false);
+  });
 });
 
 describe("isGlobMatch - brace expansion", () => {

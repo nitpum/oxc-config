@@ -10,6 +10,14 @@
   "rules": {
     "import/no-relative-parent-imports": "error",
     "nitpum/no-subdirectory-relative-imports": "error",
-    "nitpum/single-default-export": "off"
+    "nitpum/single-default-export": [
+      "error",
+      {
+        "include": [
+          "**/hooks/*/index.*",
+          "**/components/*/index.*"
+        ]
+      }
+    ]
   }
 }

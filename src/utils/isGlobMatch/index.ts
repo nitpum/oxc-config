@@ -52,7 +52,7 @@ function expandBraces(pattern: string): string[] {
 }
 
 function isGlobstar(segment: string): boolean {
-  return segment.length > 0 && /^[*]+$/.test(segment);
+  return /^[*]{2,}$/.test(segment);
 }
 
 function segmentBody(segment: string): string {
